@@ -23,7 +23,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author wangshuai
- * @since 2020-06-10
+ * @since 2022-04-10
  */
 @Service
 public class UcenterMemberServiceImpl extends ServiceImpl<UcenterMemberMapper, UcenterMember> implements UcenterMemberService {

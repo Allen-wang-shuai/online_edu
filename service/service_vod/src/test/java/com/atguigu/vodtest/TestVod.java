@@ -25,7 +25,7 @@ public class TestVod {
         GetPlayInfoResponse response = new GetPlayInfoResponse();
 
         //向request对象里面设置视频id
-        request.setVideoId("a7b254634cdd4f6bbf153242ae1e3b74");
+        request.setVideoId("fb2b59016bbb4cf5abc8cc4d93543d99");
 
         //调用初始化对象里面的方法，传递request，获取数据
         response = client.getAcsResponse(request);
@@ -50,7 +50,7 @@ public class TestVod {
         GetVideoPlayAuthResponse response = new GetVideoPlayAuthResponse();
 
         //向request对象里面设置视频id
-        request.setVideoId("99de4269b0654cb08d21990017e19528");
+        request.setVideoId("fb2b59016bbb4cf5abc8cc4d93543d99");
 //        request.setVideoId("a7b254634cdd4f6bbf153242ae1e3b74");未加密的视频也可以获得凭证
 
         //调用初始化对象里面的方法，传递request，获取数据

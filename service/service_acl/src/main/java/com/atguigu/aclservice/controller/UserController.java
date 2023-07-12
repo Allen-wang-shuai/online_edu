@@ -24,7 +24,7 @@ import java.util.Map;
  * </p>
  *
  * @author testjava
- * @since 2020-01-12
+ * @since 2022-01-12
  */
 @RestController
 @RequestMapping("/admin/acl/user")
@@ -47,11 +47,11 @@ public class UserController {
             @PathVariable Long limit,
 
             @ApiParam(name = "courseQuery", value = "查询对象", required = false)
-             User userQueryVo) {
+                    User userQueryVo) {
         Page<User> pageParam = new Page<>(page, limit);
         QueryWrapper<User> wrapper = new QueryWrapper<>();
-        if(!StringUtils.isEmpty(userQueryVo.getUsername())) {
-            wrapper.like("username",userQueryVo.getUsername());
+        if (!StringUtils.isEmpty(userQueryVo.getUsername())) {
+            wrapper.like("username", userQueryVo.getUsername());
         }
 
         IPage<User> pageModel = userService.page(pageParam, wrapper);
@@ -64,6 +64,13 @@ public class UserController {
         user.setPassword(MD5.encrypt(user.getPassword()));
         userService.save(user);
         return R.ok();
+    }
+
+    @ApiOperation(value = "根据用户id获取用户数据")
+    @GetMapping("/get/{id}")
+    public R getById(@PathVariable String id) {
+        User user = userService.getById(id);
+        return R.ok().data("item", user);
     }
 
     @ApiOperation(value = "修改管理用户")
@@ -96,9 +103,10 @@ public class UserController {
 
     @ApiOperation(value = "根据用户分配角色")
     @PostMapping("/doAssign")
-    public R doAssign(@RequestParam String userId,@RequestParam String[] roleId) {
-        roleService.saveUserRoleRealtionShip(userId,roleId);
+    public R doAssign(@RequestParam String userId, @RequestParam String[] roleId) {
+        roleService.saveUserRoleRealtionShip(userId, roleId);
         return R.ok();
     }
+
 }
 

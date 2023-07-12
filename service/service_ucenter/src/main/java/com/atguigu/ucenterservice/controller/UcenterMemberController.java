@@ -24,7 +24,7 @@ import javax.servlet.http.HttpServletRequest;
  * </p>
  *
  * @author wangshuai
- * @since 2020-06-10
+ * @since 2022-04-10
  */
 @Api(description = "用户登录注册管理")
 @RestController

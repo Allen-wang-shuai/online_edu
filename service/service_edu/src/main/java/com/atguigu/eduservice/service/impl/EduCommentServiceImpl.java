@@ -18,7 +18,7 @@ import java.util.Map;
  * </p>
  *
  * @author wangshuai
- * @since 2020-07-04
+ * @since 2022-03-19
  */
 @Service
 public class EduCommentServiceImpl extends ServiceImpl<EduCommentMapper, EduComment> implements EduCommentService {

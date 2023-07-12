@@ -21,7 +21,7 @@ import java.util.Map;
  * </p>
  *
  * @author wangshuai
- * @since 2020-07-09
+ * @since 2022-04-05
  */
 @Service
 public class StatisticsDailyServiceImpl extends ServiceImpl<StatisticsDailyMapper, StatisticsDaily> implements StatisticsDailyService {

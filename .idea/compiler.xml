@@ -7,25 +7,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="service_cms" />
-        <module name="service_vod" />
-        <module name="service_oss" />
-        <module name="service_base" />
-        <module name="service_msm" />
-        <module name="service_ucenter" />
         <module name="common_utils" />
         <module name="spring_security" />
+        <module name="service_msm" />
+        <module name="service_order" />
+        <module name="service_cms" />
+        <module name="service_oss" />
+        <module name="service_statistics" />
+        <module name="service_acl" />
+        <module name="service_vod" />
+        <module name="service_base" />
         <module name="canal_service" />
         <module name="service_edu" />
-        <module name="service_statistics" />
+        <module name="service_ucenter" />
         <module name="api_gateway" />
-        <module name="service_acl" />
-        <module name="service_order" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="17">
       <module name="api_gateway" target="1.8" />
-      <module name="canal_client" target="1.8" />
       <module name="canal_service" target="1.8" />
       <module name="common" target="1.8" />
       <module name="common_utils" target="1.8" />
@@ -48,7 +47,6 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="api_gateway" options="-parameters" />
-      <module name="canal_client" options="-parameters" />
       <module name="canal_service" options="-parameters" />
       <module name="common" options="-parameters" />
       <module name="common_utils" options="-parameters" />

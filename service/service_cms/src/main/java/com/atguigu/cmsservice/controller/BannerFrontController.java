@@ -21,7 +21,7 @@ import java.util.List;
  * </p>
  *
  * @author wangshuai
- * @since 2020-06-08
+ * @since 2022-03-08
  */
 @Api(description = "前端幻灯片管理")
 @RestController

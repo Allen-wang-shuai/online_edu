@@ -23,7 +23,7 @@ import java.util.List;
  * </p>
  *
  * @author wangshuai
- * @since 2020-05-19
+ * @since 2022-03-19
  */
 @Api(description = "课程管理")
 @RestController

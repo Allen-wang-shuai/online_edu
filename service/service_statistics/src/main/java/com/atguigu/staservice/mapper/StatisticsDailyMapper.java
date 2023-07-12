@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author wangshuai
- * @since 2020-07-09
+ * @since 2022-04-05
  */
 public interface StatisticsDailyMapper extends BaseMapper<StatisticsDaily> {
 

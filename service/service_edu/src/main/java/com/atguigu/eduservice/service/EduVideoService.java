@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author wangshuai
- * @since 2020-05-19
+ * @since 2022-03-19
  */
 public interface EduVideoService extends IService<EduVideo> {
 

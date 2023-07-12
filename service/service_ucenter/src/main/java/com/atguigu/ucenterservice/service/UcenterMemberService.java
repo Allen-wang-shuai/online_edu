@@ -12,7 +12,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author wangshuai
- * @since 2020-06-10
+ * @since 2022-04-10
  */
 public interface UcenterMemberService extends IService<UcenterMember> {
 

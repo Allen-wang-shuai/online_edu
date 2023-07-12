@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.*;
  * </p>
  *
  * @author wangshuai
- * @since 2020-06-08
+ * @since 2022-03-08
  */
 @Api(description = "后端幻灯片管理")
 @RestController
